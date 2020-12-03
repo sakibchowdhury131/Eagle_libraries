@@ -12960,24 +12960,24 @@ Allows current flow when high potential at base.</description>
 </devicesets>
 </library>
 <library name="con-amp" urn="urn:adsk.eagle:library:127">
-<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
-RJ45 Jack connectors&lt;br&gt;
- Based on the previous libraris:
- &lt;ul&gt;
- &lt;li&gt;amp.lbr
- &lt;li&gt;amp-j.lbr
- &lt;li&gt;amp-mta.lbr
- &lt;li&gt;amp-nlok.lbr
- &lt;li&gt;amp-sim.lbr
- &lt;li&gt;amp-micro-match.lbr
- &lt;/ul&gt;
- Sources :
- &lt;ul&gt;
- &lt;li&gt;Catalog 82066 Revised 11-95 
- &lt;li&gt;Product Guide 296785 Rev. 8-99
- &lt;li&gt;Product Guide CD-ROM 1999
- &lt;li&gt;www.amp.com
- &lt;/ul&gt;
+<description>&lt;b&gt;AMP Connectors&lt;/b&gt;&lt;p&gt;
+RJ45 Jack connectors&lt;br&gt;
+ Based on the previous libraris:
+ &lt;ul&gt;
+ &lt;li&gt;amp.lbr
+ &lt;li&gt;amp-j.lbr
+ &lt;li&gt;amp-mta.lbr
+ &lt;li&gt;amp-nlok.lbr
+ &lt;li&gt;amp-sim.lbr
+ &lt;li&gt;amp-micro-match.lbr
+ &lt;/ul&gt;
+ Sources :
+ &lt;ul&gt;
+ &lt;li&gt;Catalog 82066 Revised 11-95 
+ &lt;li&gt;Product Guide 296785 Rev. 8-99
+ &lt;li&gt;Product Guide CD-ROM 1999
+ &lt;li&gt;www.amp.com
+ &lt;/ul&gt;
  &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
 <package name="10X06MTA" urn="urn:adsk.eagle:footprint:8080327/1" library_version="4">
@@ -13095,9 +13095,9 @@ Connection corrected 2014-09-19</description>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="L1" library="rcl-2" deviceset="L-US" device="L0603"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2"/>
+<part name="L1" library="rcl-2" deviceset="L-US" device="L0603" value="DNP"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="10uF"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="8.1uF"/>
@@ -13604,7 +13604,7 @@ Connection corrected 2014-09-19</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="EXT_RSTB"/>
 <wire x1="45.72" y1="81.28" x2="45.72" y2="86.36" width="0.1524" layer="91"/>
-<label x="45.72" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="45.72" y="86.36" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -13655,7 +13655,7 @@ Connection corrected 2014-09-19</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO2"/>
 <wire x1="55.88" y1="22.86" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
-<label x="55.88" y="17.78" size="1.778" layer="95" rot="R270" xref="yes"/>
+<label x="55.88" y="17.78" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -13674,49 +13674,49 @@ Connection corrected 2014-09-19</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_DATA_2"/>
 <wire x1="73.66" y1="45.72" x2="78.74" y2="45.72" width="0.1524" layer="91"/>
-<label x="78.74" y="45.72" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="45.72" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_L" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_DATA_3"/>
 <wire x1="73.66" y1="48.26" x2="78.74" y2="48.26" width="0.1524" layer="91"/>
-<label x="78.74" y="48.26" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="48.26" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_CS" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_CMD"/>
 <wire x1="73.66" y1="50.8" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="50.8" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="50.8" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_CLK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_CLK"/>
 <wire x1="73.66" y1="53.34" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
-<label x="78.74" y="53.34" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="53.34" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_SO" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_DATA_0"/>
 <wire x1="73.66" y1="55.88" x2="78.74" y2="55.88" width="0.1524" layer="91"/>
-<label x="78.74" y="55.88" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="55.88" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SD_SI" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="SD_DATA_1"/>
 <wire x1="73.66" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
-<label x="81.28" y="58.42" size="1.778" layer="95" xref="yes"/>
+<label x="81.28" y="58.42" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GP5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GPIO5"/>
 <wire x1="73.66" y1="60.96" x2="78.74" y2="60.96" width="0.1524" layer="91"/>
-<label x="78.74" y="60.96" size="1.778" layer="95" xref="yes"/>
+<label x="78.74" y="60.96" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RX" class="0">
@@ -13724,7 +13724,7 @@ Connection corrected 2014-09-19</description>
 <pinref part="IC1" gate="G$1" pin="U0RXD"/>
 <wire x1="63.5" y1="81.28" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="81.28" x2="66.04" y2="86.36" width="0.1524" layer="91"/>
-<label x="66.04" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="66.04" y="86.36" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -13738,7 +13738,7 @@ Connection corrected 2014-09-19</description>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="83.82" x2="63.5" y2="86.36" width="0.1524" layer="91"/>
-<label x="63.5" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="63.5" y="86.36" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="1"/>
@@ -13750,7 +13750,7 @@ Connection corrected 2014-09-19</description>
 <segment>
 <pinref part="IC1" gate="G$1" pin="RES12K"/>
 <wire x1="48.26" y1="81.28" x2="48.26" y2="86.36" width="0.1524" layer="91"/>
-<label x="48.26" y="86.36" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="48.26" y="86.36" size="1.016" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
